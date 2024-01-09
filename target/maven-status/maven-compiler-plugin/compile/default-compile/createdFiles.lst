@@ -1,0 +1,3 @@
+com\mycompany\cinema\app\CinemaApp.class
+com\mycompany\cinema\model\Movie.class
+com\mycompany\cinema\service\MovieService.class
