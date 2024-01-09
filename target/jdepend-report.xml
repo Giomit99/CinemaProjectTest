@@ -36,70 +36,11 @@
         </Package>
 
         <Package name="com.mycompany.cinema.model">
-            <Stats>
-                <TotalClasses>1</TotalClasses>
-                <ConcreteClasses>1</ConcreteClasses>
-                <AbstractClasses>0</AbstractClasses>
-                <Ca>2</Ca>
-                <Ce>2</Ce>
-                <A>0</A>
-                <I>0.5</I>
-                <D>0.5</D>
-                <V>1</V>
-            </Stats>
-
-            <AbstractClasses>
-            </AbstractClasses>
-
-            <ConcreteClasses>
-                <Class sourceFile="Movie.java">
-                    com.mycompany.cinema.model.Movie
-                </Class>
-            </ConcreteClasses>
-
-            <DependsUpon>
-                <Package>com.mycompany.cinema.service</Package>
-                <Package>java.lang</Package>
-            </DependsUpon>
-
-            <UsedBy>
-                <Package>com.mycompany.cinema.app</Package>
-                <Package>com.mycompany.cinema.service</Package>
-            </UsedBy>
+            <error>No stats available: package referenced, but not analyzed.</error>
         </Package>
 
         <Package name="com.mycompany.cinema.service">
-            <Stats>
-                <TotalClasses>1</TotalClasses>
-                <ConcreteClasses>1</ConcreteClasses>
-                <AbstractClasses>0</AbstractClasses>
-                <Ca>2</Ca>
-                <Ce>3</Ce>
-                <A>0</A>
-                <I>0.6</I>
-                <D>0.4</D>
-                <V>1</V>
-            </Stats>
-
-            <AbstractClasses>
-            </AbstractClasses>
-
-            <ConcreteClasses>
-                <Class sourceFile="MovieService.java">
-                    com.mycompany.cinema.service.MovieService
-                </Class>
-            </ConcreteClasses>
-
-            <DependsUpon>
-                <Package>com.mycompany.cinema.model</Package>
-                <Package>java.io</Package>
-                <Package>java.lang</Package>
-            </DependsUpon>
-
-            <UsedBy>
-                <Package>com.mycompany.cinema.app</Package>
-                <Package>com.mycompany.cinema.model</Package>
-            </UsedBy>
+            <error>No stats available: package referenced, but not analyzed.</error>
         </Package>
 
         <Package name="java.io">
@@ -112,21 +53,5 @@
     </Packages>
 
     <Cycles>
-        <Package Name="com.mycompany.cinema.app">
-            <Package>com.mycompany.cinema.model</Package>
-            <Package>com.mycompany.cinema.service</Package>
-            <Package>com.mycompany.cinema.model</Package>
-        </Package>
-
-        <Package Name="com.mycompany.cinema.model">
-            <Package>com.mycompany.cinema.service</Package>
-            <Package>com.mycompany.cinema.model</Package>
-        </Package>
-
-        <Package Name="com.mycompany.cinema.service">
-            <Package>com.mycompany.cinema.model</Package>
-            <Package>com.mycompany.cinema.service</Package>
-        </Package>
-
     </Cycles>
 </JDepend>

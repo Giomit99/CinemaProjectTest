@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="it"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CinemaApp.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">CinemaProjectTest</a> &gt; <a href="index.source.html" class="el_package">com.mycompany.cinema.app</a> &gt; <span class="el_source">CinemaApp.java</span></div><h1>CinemaApp.java</h1><pre class="source lang-java linenums">package com.mycompany.cinema.app;
+
+import com.mycompany.cinema.model.Movie;
+import com.mycompany.cinema.service.MovieService;
+
+<span class="nc" id="L6">public class CinemaApp {</span>
+   // public int A;
+    public static void main(String[] args) {
+<span class="nc" id="L9">        MovieService movieService = new MovieService();</span>
+<span class="nc" id="L10">        Movie movie1 = new Movie(&quot;Inception&quot;, 2010);</span>
+<span class="nc" id="L11">        Movie movie2 = new Movie(&quot;The Shawshank Redemption&quot;, 1994);</span>
+
+<span class="nc" id="L13">        movieService.setMovie(movie1);</span>
+<span class="nc" id="L14">        movie1.setMovieService(movieService);</span>
+
+        // Chiamiamo un metodo che crea la dipendenza circolare
+<span class="nc" id="L17">        movie1.doSomething();</span>
+
+<span class="nc" id="L19">        System.out.println(&quot;All Movies:&quot;);</span>
+<span class="nc" id="L20">        System.out.println(movie1);</span>
+<span class="nc" id="L21">        System.out.println(movie2);</span>
+<span class="nc" id="L22">    }</span>
+/*
+    public CinemaApp(int a){
+        A=a;
+    }*/
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
