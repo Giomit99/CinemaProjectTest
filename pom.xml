@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!--URL del progetto in locale-->
-    <url>file://C:/Users/omitk/Desktop/Tirocinio/GITPROJECT/CinemaProjects/my_cinema_project_ciclo</url>
+    <url>file://C:/Users/omitk/Desktop/Tirocinio/GITPROJECT/CinemaProjectTest</url>
 
     <groupId>com.mycompany</groupId>
-    <artifactId>my_cinema_project_ciclo</artifactId>
+    <artifactId>CinemaProjectTest</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
