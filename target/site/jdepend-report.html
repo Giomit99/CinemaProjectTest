@@ -107,6 +107,28 @@ The following document contains the results of a JDepend metric analysis. The va
 <td>0.0%</td>
 <td>1</td>
 </tr>
+<tr class="a"><td><a href="#com.mycompany.cinema.model">com.mycompany.cinema.model</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>0.0%</td>
+<td>50.0%</td>
+<td>50.0%</td>
+<td>1</td>
+</tr>
+<tr class="b"><td><a href="#com.mycompany.cinema.service">com.mycompany.cinema.service</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>0.0%</td>
+<td>60.000004%</td>
+<td>40.0%</td>
+<td>1</td>
+</tr>
 </table>
 <a name="packages"></a><h2>Packages</h2>
 [ <a href="#summary">summary</a> ] [ <a href="#packages">packages</a> ] [ <a href="#cycles">cycles</a> ] [ <a href="#explanations">explanations</a> ] <br />
@@ -140,10 +162,90 @@ java.lang<br />
 </td>
 </tr>
 </table>
+<a name="com.mycompany.cinema.model"></a><h3>com.mycompany.cinema.model</h3>
+<table class="bodyTable"><tr class="a"><th>Afferent Couplings</th>
+<th>Efferent Couplings</th>
+<th>Abstractness</th>
+<th>Instability</th>
+<th>Distance</th>
+</tr>
+<tr class="b"><td>2</td>
+<td>2</td>
+<td>0.0%</td>
+<td>50.0%</td>
+<td>50.0%</td>
+</tr>
+</table>
+<table class="bodyTable"><tr class="a"><th>Abstract Classes</th>
+<th>Concrete Classes</th>
+<th>Used by Packages</th>
+<th>Uses Packages</th>
+</tr>
+<tr class="b"><td><i>None</i></td>
+<td>com.mycompany.cinema.model.Movie<br />
+</td>
+<td>com.mycompany.cinema.app<br />
+com.mycompany.cinema.service<br />
+</td>
+<td>com.mycompany.cinema.service<br />
+java.lang<br />
+</td>
+</tr>
+</table>
+<a name="com.mycompany.cinema.service"></a><h3>com.mycompany.cinema.service</h3>
+<table class="bodyTable"><tr class="a"><th>Afferent Couplings</th>
+<th>Efferent Couplings</th>
+<th>Abstractness</th>
+<th>Instability</th>
+<th>Distance</th>
+</tr>
+<tr class="b"><td>2</td>
+<td>3</td>
+<td>0.0%</td>
+<td>60.000004%</td>
+<td>40.0%</td>
+</tr>
+</table>
+<table class="bodyTable"><tr class="a"><th>Abstract Classes</th>
+<th>Concrete Classes</th>
+<th>Used by Packages</th>
+<th>Uses Packages</th>
+</tr>
+<tr class="b"><td><i>None</i></td>
+<td>com.mycompany.cinema.service.MovieService<br />
+</td>
+<td>com.mycompany.cinema.app<br />
+com.mycompany.cinema.model<br />
+</td>
+<td>com.mycompany.cinema.model<br />
+java.io<br />
+java.lang<br />
+</td>
+</tr>
+</table>
 <a name="cycles"></a><h2>Cycles</h2>
 [ <a href="#summary">summary</a> ] [ <a href="#packages">packages</a> ] [ <a href="#cycles">cycles</a> ] [ <a href="#explanations">explanations</a> ] <br />
 <br />
-There are no cyclic dependencies.<br />
+<table class="bodyTable"><tr class="a"><th>Package</th>
+<th>Package Dependencies</th>
+</tr>
+<tr class="b"><td>com.mycompany.cinema.app</td>
+<td>com.mycompany.cinema.model<br />
+com.mycompany.cinema.service<br />
+com.mycompany.cinema.model<br />
+</td>
+</tr>
+<tr class="a"><td>com.mycompany.cinema.model</td>
+<td>com.mycompany.cinema.service<br />
+com.mycompany.cinema.model<br />
+</td>
+</tr>
+<tr class="b"><td>com.mycompany.cinema.service</td>
+<td>com.mycompany.cinema.model<br />
+com.mycompany.cinema.service<br />
+</td>
+</tr>
+</table>
 <a name="explanations"></a><h2>Explanation</h2>
 [ <a href="#summary">summary</a> ] [ <a href="#packages">packages</a> ] [ <a href="#cycles">cycles</a> ] [ <a href="#explanations">explanations</a> ] <br />
 <br />

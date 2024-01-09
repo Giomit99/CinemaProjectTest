@@ -1,4 +1,4 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-CinemaProjectTest,com.mycompany.cinema.model,Movie,29,0,2,0,11,0,6,0,5,0
-CinemaProjectTest,com.mycompany.cinema.service,MovieService,17,0,2,0,6,0,4,0,3,0
+CinemaProjectTest,com.mycompany.cinema.model,Movie,42,0,2,0,11,0,6,0,5,0
+CinemaProjectTest,com.mycompany.cinema.service,MovieService,23,0,2,0,6,0,4,0,3,0
 CinemaProjectTest,com.mycompany.cinema.app,CinemaApp,37,0,0,0,11,0,2,0,2,0
