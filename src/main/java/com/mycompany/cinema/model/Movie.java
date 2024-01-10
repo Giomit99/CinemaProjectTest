@@ -1,3 +1,4 @@
+/*
 package com.mycompany.cinema.model;
 
 import com.mycompany.cinema.service.MovieService;
@@ -37,5 +38,34 @@ public class Movie {
 
     public String getTitle() {
         return title;
+    }
+}
+*/
+
+package com.mycompany.cinema.model;
+
+public class Movie {
+    private String title;
+    private int year;
+
+    public Movie(String title, int year) {
+        this.title = title;
+        this.year = year;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "title='" + title + '\'' +
+                ", year=" + year +
+                '}';
     }
 }

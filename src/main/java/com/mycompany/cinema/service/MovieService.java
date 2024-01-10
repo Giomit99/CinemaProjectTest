@@ -1,4 +1,4 @@
-package com.mycompany.cinema.service;
+/*package com.mycompany.cinema.service;
 
 import com.mycompany.cinema.model.Movie;
 //import com.mycompany.cinema.app.CinemaApp;
@@ -18,7 +18,20 @@ public class MovieService {
         }
     }
 
-    /*public MovieService(){
-        cinemaApp= new CinemaApp(3);
-    }*/
+    //public MovieService(){
+    //    cinemaApp= new CinemaApp(3);
+    //}
+}
+*/
+
+package com.mycompany.cinema.service;
+
+import com.mycompany.cinema.model.Movie;
+
+import java.util.List;
+
+public interface MovieService {
+    void addMovie(Movie movie);
+
+    List<Movie> getAllMovies();
 }
