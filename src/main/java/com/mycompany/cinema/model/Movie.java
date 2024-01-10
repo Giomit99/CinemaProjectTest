@@ -38,6 +38,10 @@ public class Movie {
     public String getTitle() {
         return title;
     }
+
+    public int getCinema(){
+        return cinemaApp.A;
+    }
 }
 
 /*

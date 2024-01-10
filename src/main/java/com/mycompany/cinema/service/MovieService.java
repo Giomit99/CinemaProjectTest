@@ -21,6 +21,10 @@ public class MovieService {
     public MovieService(){
         cinemaApp= new CinemaApp(3);
     }
+
+    public int cinemaAppMovieService(){
+        return cinemaApp.A;
+    }
 }
 
 /*
