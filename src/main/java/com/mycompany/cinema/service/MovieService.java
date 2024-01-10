@@ -1,11 +1,11 @@
-/*package com.mycompany.cinema.service;
+package com.mycompany.cinema.service;
 
 import com.mycompany.cinema.model.Movie;
-//import com.mycompany.cinema.app.CinemaApp;
+import com.mycompany.cinema.app.CinemaApp;
 
 public class MovieService {
     private Movie movie; // Dipendenza circolare
-    //private CinemaApp cinemaApp;
+    private CinemaApp cinemaApp;
 
     public void setMovie(Movie movie) {
         this.movie = movie;
@@ -18,12 +18,13 @@ public class MovieService {
         }
     }
 
-    //public MovieService(){
-    //    cinemaApp= new CinemaApp(3);
-    //}
+    public MovieService(){
+        cinemaApp= new CinemaApp(3);
+    }
 }
-*/
 
+/*
+//ACICLICO
 package com.mycompany.cinema.service;
 
 import com.mycompany.cinema.model.Movie;
@@ -35,3 +36,4 @@ public interface MovieService {
 
     List<Movie> getAllMovies();
 }
+*/

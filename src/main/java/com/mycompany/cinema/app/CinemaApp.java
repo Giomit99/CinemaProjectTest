@@ -1,10 +1,10 @@
-/*package com.mycompany.cinema.app;
+package com.mycompany.cinema.app;
 
 import com.mycompany.cinema.model.Movie;
 import com.mycompany.cinema.service.MovieService;
 
 public class CinemaApp {
-   // public int A;
+    public int A;
     public static void main(String[] args) {
         MovieService movieService = new MovieService();
         Movie movie1 = new Movie("Inception", 2010);
@@ -21,11 +21,13 @@ public class CinemaApp {
         System.out.println(movie2);
     }
 
-    //public CinemaApp(int a){
-    //    A=a;
-    //}
-}*/
+    public CinemaApp(int a){
+        A=a;
+    }
+}
 
+/*
+//ACICLICO
 package com.mycompany.cinema.app;
 
 import com.mycompany.cinema.model.Movie;
@@ -48,3 +50,4 @@ public class CinemaApp {
         }
     }
 }
+*/

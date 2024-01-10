@@ -1,3 +1,4 @@
+/*
 package com.mycompany.cinema.service;
 
 import com.mycompany.cinema.model.Movie;
@@ -22,3 +23,4 @@ public class MovieServiceImpl implements MovieService {
         return new ArrayList<>(movies);
     }
 }
+*/
