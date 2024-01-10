@@ -1,17 +1,13 @@
 package com.mycompany.cinema.model;
 
 import com.mycompany.cinema.service.MovieService;
-import com.mycompany.cinema.app.CinemaApp;
-
 
 public class Movie {
     private String title;
     private int year;
     private MovieService movieService; // Dipendenza circolare
-    private CinemaApp cinemaApp;
 
     public Movie(String title, int year) {
-        cinemaApp= new CinemaApp(2);
         this.title = title;
         this.year = year;
     }
@@ -37,10 +33,6 @@ public class Movie {
 
     public String getTitle() {
         return title;
-    }
-
-    public int getCinema(){
-        return cinemaApp.A;
     }
 }
 

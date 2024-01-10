@@ -4,7 +4,6 @@ import com.mycompany.cinema.model.Movie;
 import com.mycompany.cinema.service.MovieService;
 
 public class CinemaApp {
-    public int A;
     public static void main(String[] args) {
         MovieService movieService = new MovieService();
         Movie movie1 = new Movie("Inception", 2010);
@@ -19,10 +18,6 @@ public class CinemaApp {
         System.out.println("All Movies:");
         System.out.println(movie1);
         System.out.println(movie2);
-    }
-
-    public CinemaApp(int a){
-        A=a;
     }
 }
 
