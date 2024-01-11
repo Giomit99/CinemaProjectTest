@@ -1,11 +1,11 @@
 package com.mycompany.cinema.pippo;
 
-//import com.mycompany.cinema.pluto.Pluto;
+import com.mycompany.cinema.pluto.Pluto;
 
 public class Pippo {
-    //private Pluto pluto;
+    private Pluto pluto;
 
     public Pippo(){
-        //pluto= new Pluto();
+        pluto= new Pluto();
     }
 }
