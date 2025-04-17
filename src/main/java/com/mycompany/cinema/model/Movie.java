@@ -5,14 +5,14 @@ import com.mycompany.cinema.service.MovieService;
 public class Movie {
     private String title;
     private int year;
-    private MovieService movieService; // Dipendenza circolare
+    //private MovieService movieService; // Dipendenza circolare
 
     public Movie(String title, int year) {
         this.title = title;
         this.year = year;
     }
 
-    public void setMovieService(MovieService movieService) {
+    /*public void setMovieService(MovieService movieService) {
         this.movieService = movieService;
     }
 
@@ -21,7 +21,7 @@ public class Movie {
         if (movieService != null) {
             movieService.someMethod();
         }
-    }
+    }*/
 
     @Override
     public String toString() {

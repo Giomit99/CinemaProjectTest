@@ -10,10 +10,10 @@ public class CinemaApp {
         Movie movie2 = new Movie("The Shawshank Redemption", 1994);
 
         movieService.setMovie(movie1);
-        movie1.setMovieService(movieService);
+        //movie1.setMovieService(movieService);
 
         // Chiamiamo un metodo che crea la dipendenza circolare
-        movie1.doSomething();
+        //movie1.doSomething();
 
         System.out.println("All Movies:");
         System.out.println(movie1);
